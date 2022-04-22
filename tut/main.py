@@ -52,6 +52,13 @@ c1.cell_btn_object.place(
     x=0, y=0
 )
 
+# place example, not gonna work with many buttons #
+c2 = Cell()
+c2.create_btn_object(center-frame)
+c2.cell_btn_object.place(
+    x=40, y=0
+)
+
 
 
 # run the window #
