@@ -55,7 +55,9 @@ for x in range(settings.GRID_SIZE):
             column=y, row=x
         )
 
-
+Cell.randomize_mines()
+for c in Cell.all:
+    print(c.is_mine)
 
 # run the window #
 root.mainloop()
