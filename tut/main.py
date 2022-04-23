@@ -45,21 +45,19 @@ center_frame.place(
     y=utils.height_prct(25)
 )
 
-# cell code #
-c1 = Cell()
-c1.create_btn_object(center_frame)
-c1.cell_btn_object.place(
-    x=0, y=0
-)
+# MineSweeper Grid section #
 
-# place example, not gonna work with many buttons #
-c2 = Cell()
-c2.create_btn_object(center-frame)
-c2.cell_btn_object.place(
-    x=40, y=0
-)
+for x in range(settings.GRID_SIZE):
+    for y in range(settings.GRID_SIZE):
+        c = Cell(x, y)
+        c.create_btn_object(center_frame)
+        c.cell_btn_object.grid(
+            column=y, row=x
+        )
 
 
 
 # run the window #
 root.mainloop()
+
+# paused at 40:54 of video #
