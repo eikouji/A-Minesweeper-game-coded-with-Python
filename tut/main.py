@@ -62,4 +62,5 @@ for c in Cell.all:
 # run the window #
 root.mainloop()
 
-# paused at 40:54 of video #
+# a huge thank you to Jim at freeCodeCamp for having a wonderful youtube tutorial to learn from. 
+# watch the video at https://youtu.be/OqbGRZx4xUc #
